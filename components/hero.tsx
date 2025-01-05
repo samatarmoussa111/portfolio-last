@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -78,11 +79,16 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button size="lg" className="min-w-[150px]">
-              Explore My Work
+            <Button asChild size="lg" className="min-w-[150px]">
+              <Link href="#projects">Explore My Work</Link>
             </Button>
-            <Button size="lg" variant="outline" className="min-w-[150px]">
-              Get in Touch
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="min-w-[150px]"
+            >
+              <Link href="#contact">Get in Touch</Link>
             </Button>
           </motion.div>
         </div>

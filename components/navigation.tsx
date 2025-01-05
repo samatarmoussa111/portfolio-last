@@ -4,13 +4,13 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
 
 const links = [
   { href: "http://localhost:3000/#about", label: "About" },
   { href: "http://localhost:3000/#projects", label: "Projects" },
   { href: "http://localhost:3000/#skills", label: "Skills" },
   { href: "/posts", label: "Blog" },
-  { href: "http://localhost:3000/#contact", label: "Contact" },
 ];
 
 export function Navigation() {
@@ -39,7 +39,7 @@ export function Navigation() {
         <Link href="/" className="text-lg font-bold">
           Samatar Barkadleh
         </Link>
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex md:items-center gap-6">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -55,6 +55,10 @@ export function Navigation() {
               />
             </Link>
           ))}
+
+          <Button asChild>
+            <Link href="http://localhost:3000/#contact">Contact me</Link>
+          </Button>
         </nav>
         <button
           className="flex flex-col gap-1.5 md:hidden"

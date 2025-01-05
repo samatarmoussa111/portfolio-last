@@ -106,7 +106,7 @@ export function BlogList() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group relative flex flex-col space-y-4"
           >
-            <Link href={`/blog/${article.slug}`} className="space-y-4">
+            <Link href={`/posts/${article.slug}`} className="space-y-4">
               <motion.div
                 className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/10 via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
                 initial={false}
