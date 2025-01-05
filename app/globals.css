@@ -6,6 +6,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.bg-grid-white\/10 {
+  background-image: linear-gradient(
+      to right,
+      rgb(255 255 255 / 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.1) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    10%,
+    white,
+    90%,
+    transparent
+  );
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

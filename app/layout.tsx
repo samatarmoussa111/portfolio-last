@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Montserrat as FontSans } from "next/font/google";
 import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
 import { Navigation } from "@/components/navigation";
+import { Poppins } from "next/font/google";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+// Font files can be colocated inside of `app`
 
 const fontMono = GeistMono;
 
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 export const metadata: Metadata = {
   title: "Portfolio - Math, Code, and Data",
   description:
@@ -28,9 +29,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-          fontMono.variable
+          "min-h-screen bg-background antialiased",
+          fontMono.variable,
+          poppins.className
         )}
       >
         <Navigation />
