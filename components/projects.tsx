@@ -16,20 +16,22 @@ const projects = [
     title: "Math Learning Platform",
     description:
       "An interactive platform for learning advanced mathematics through visualization and practice.",
-    image: "/placeholder.svg?height=400&width=600",
+    image:
+      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop",
   },
   {
     title: "Data Analytics Dashboard",
     description:
-      "A comprehensive dashboard for visualizing and analyzing large datasets with machine.",
-    image: "/placeholder.svg?height=400&width=600",
+      "A comprehensive dashboard for visualizing and analyzing large datasets with machine learning insights.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
   },
 ];
 
 export function Projects() {
   return (
     <section id="projects" className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-20">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Featured Projects

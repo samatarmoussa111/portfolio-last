@@ -27,7 +27,7 @@ const timeline = [
 export function About() {
   return (
     <section id="about" className="py-24 bg-muted/50">
-      <div className="container px-6 md:px-6">
+      <div className="container px-4 md:px-20">
         <div className="max-w-2xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ export function About() {
                   className="relative w-24 h-24 overflow-hidden rounded-xl border-2 border-primary/20"
                 >
                   <Image
-                    src="/placeholder.svg"
+                    src="/photo_portfolio_combined.png"
                     alt="Profile"
                     fill
                     className="object-cover"

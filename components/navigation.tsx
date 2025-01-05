@@ -6,12 +6,11 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "#blog", label: "Blog" },
-  { href: "#contact", label: "Contact" },
+  { href: "http://localhost:3000/#about", label: "About" },
+  { href: "http://localhost:3000/#projects", label: "Projects" },
+  { href: "http://localhost:3000/#skills", label: "Skills" },
+  { href: "/posts", label: "Blog" },
+  { href: "http://localhost:3000/#contact", label: "Contact" },
 ];
 
 export function Navigation() {
@@ -36,7 +35,7 @@ export function Navigation() {
           : "bg-transparent"
       )}
     >
-      <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="container flex h-16 items-center justify-between px-4 md:px-20">
         <Link href="/" className="text-lg font-bold">
           Samatar Barkadleh
         </Link>
