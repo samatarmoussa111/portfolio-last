@@ -7,19 +7,38 @@ import Link from "next/link";
 
 const timeline = [
   {
-    year: "2023",
+    year: "2024",
     events: [
-      "Building a new startup, this time it's going to be a big one",
-      "Started writing blogs as a daily habit. Won the nobel prize for literature",
-      "My brother went on to pursue a career in music, he's now a famous singer",
+      "Fell in love with data science — it just made sense to combine my math background and coding skills.",
+      "Started crafting data-driven solutions, bridging logic and creativity.",
     ],
   },
   {
-    year: "2022",
+    year: "2023",
     events: [
-      "Bought a new M2 chip macbook pro wow this is crazy!",
-      "Broke the ship as soon as I got it, had to buy a new one",
-      "Bought a new M2 chip macbook pro and started living on the streets",
+      "Moved to the U.S. and took a bold step: launched my SaaS business.",
+      "Built tools that empower people, solving problems I care deeply about.",
+    ],
+  },
+  {
+    year: "2020",
+    events: [
+      "Discovered the world of programming and dove in headfirst, armed with curiosity and a stack of online courses.",
+      "Spent countless nights juggling teaching and coding, slowly turning a passion into expertise.",
+    ],
+  },
+  {
+    year: "2019",
+    events: [
+      "Became a university math professor, sharing my love for numbers with future problem-solvers.",
+      "Learned the power of patience and the art of explaining the unexplainable.",
+    ],
+  },
+  {
+    year: "2016",
+    events: [
+      "Began my studies in Mathematical Research at the University of Besançon, immersing myself in the foundations of advanced mathematics.",
+      "Discovered a passion for unraveling complex problems and the potential of math to solve real-world challenges.",
     ],
   },
 ];
@@ -39,17 +58,14 @@ export function About() {
             <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter">
-                  Hey! I&apos;m{" "}
-                  <span className="text-primary">Tyler Durden</span> and
-                  I&apos;m a full stack soap engineer.
+                  A Journey Through Math and Tech.
                 </h2>
                 <p className="text-muted-foreground">
-                  I&apos;ve been obsessed with technology ever since I was a
-                  kid. When I wasn&apos;t taking apart my family&apos;s computer
-                  (sorry mom), I was teaching myself how to code. Fast forward a
-                  few years, and now I&apos;m a full-fledged code ninja with an
-                  insatiable thirst for creating beautiful websites and
-                  functional applications.
+                  Hi, I&apos;m Samatar Barkadleh. Math taught me how to solve
+                  problems, coding taught me how to build solutions. Along the
+                  way, I&apos;ve been a teacher, a lifelong learner, and now, a
+                  creator—transforming ideas into SaaS products and data-driven
+                  insights.
                 </p>
               </div>
               <div className="flex flex-col items-center gap-4 shrink-0">
