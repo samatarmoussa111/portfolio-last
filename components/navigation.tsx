@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
@@ -36,8 +37,14 @@ export function Navigation() {
       )}
     >
       <div className="container flex h-16 items-center justify-between px-4 md:px-20">
-        <Link href="/" className="text-lg font-bold">
-          Samatar Barkadleh
+        <Link href="/" className="relative w-[240px] h-[50px]">
+          <Image
+            src="/logo.svg"
+            alt="Samatar Barkadleh"
+            fill
+            className="object-contain"
+            priority
+          />
         </Link>
         <nav className="hidden md:flex md:items-center gap-6">
           {links.map((link) => (
