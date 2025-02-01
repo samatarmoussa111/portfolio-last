@@ -58,7 +58,7 @@ export function About() {
             <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter">
-                  A Journey Through Math and Tech.
+                  Hi, I&apos;m Samatar Barkadleh
                 </h2>
                 <p className="text-muted-foreground">
                   Hi, I&apos;m Samatar Barkadleh. Math taught me how to solve

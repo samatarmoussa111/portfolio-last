@@ -39,7 +39,7 @@ export function Navigation() {
       <div className="container flex h-16 items-center justify-between px-4 md:px-20">
         <Link href="/" className="relative w-[240px] h-[50px]">
           <Image
-            src="/logo.svg"
+            src="/logo-transparent-svg.svg"
             alt="Samatar Barkadleh"
             fill
             className="object-contain"
